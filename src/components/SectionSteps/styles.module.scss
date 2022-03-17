@@ -1,0 +1,31 @@
+.section_steps {
+    padding: 80px 0;
+    gap: 2rem;
+    .title {
+        flex: 1;
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            max-width: 262px;
+            span {
+                color: var(--main);
+            }
+        }
+        p {
+            color: #555;
+            font-weight: 700;
+        }
+    }
+    .item {
+        flex: 1;
+        position: relative;
+        p {
+            position: absolute;
+            bottom: 1.5rem;
+            margin-bottom: 0;
+            left: 64px;
+            color: #555;
+            font-weight: 700;
+        }
+    }
+}

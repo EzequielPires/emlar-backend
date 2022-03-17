@@ -1,0 +1,75 @@
+.fa-envelope {
+    mask-image: url(../assets/icons/envelope.svg) no-repeat center;
+    mask: url(../assets/icons/envelope.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/envelope.svg) no-repeat center;
+}
+.fa-whatsapp {
+    mask-image: url(../assets/icons/whatsapp.svg) no-repeat center;
+    mask: url(../assets/icons/whatsapp.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/whatsapp.svg) no-repeat center;
+}
+.fa-instagram {
+    mask-image: url(../assets/icons/instagram.svg) no-repeat center;
+    mask: url(../assets/icons/instagram.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/instagram.svg) no-repeat center;
+}
+.fa-facebook {
+    mask-image: url(../assets/icons/facebook-f.svg) no-repeat center;
+    mask: url(../assets/icons/facebook-f.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/facebook-f.svg) no-repeat center;
+}
+.fa-linkedin {
+    mask-image: url(../assets/icons/linkedin-in.svg) no-repeat center;
+    mask: url(../assets/icons/linkedin-in.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/linkedin-in.svg) no-repeat center;
+}
+.fa-calculator {
+    mask-image: url(../assets/icons/calculator.svg) no-repeat center;
+    mask: url(../assets/icons/calculator.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/calculator.svg) no-repeat center;
+}
+.fa-hammer {
+    mask-image: url(../assets/icons/hammer.svg) no-repeat center;
+    mask: url(../assets/icons/hammer.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/hammer.svg) no-repeat center;
+}
+.fa-chart-bar {
+    mask-image: url(../assets/icons/chart-bar.svg) no-repeat center;
+    mask: url(../assets/icons/chart-bar.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/chart-bar.svg) no-repeat center;
+}
+.fa-document {
+    mask-image: url(../assets/icons/file-alt.svg) no-repeat center;
+    mask: url(../assets/icons/file-alt.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/file-alt.svg) no-repeat center;
+}
+.fa-repeat {
+    mask-image: url(../assets/icons/repeat.svg) no-repeat center;
+    mask: url(../assets/icons/repeat.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/repeat.svg) no-repeat center;
+}
+.fa-rocket-launch {
+    mask-image: url(../assets/icons/rocket-launch.svg) no-repeat center;
+    mask: url(../assets/icons/rocket-launch.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/rocket-launch.svg) no-repeat center;
+}
+.fa-chevron-down {
+    mask-image: url(../assets/icons/chevron-down.svg) no-repeat center;
+    mask: url(../assets/icons/chevron-down.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/chevron-down.svg) no-repeat center;
+}
+.fa-garage {
+    mask-image: url(../assets/icons/garage.svg) no-repeat center;
+    mask: url(../assets/icons/garage.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/garage.svg) no-repeat center;
+}
+.fa-bath {
+    mask-image: url(../assets/icons/bath.svg) no-repeat center;
+    mask: url(../assets/icons/bath.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/bath.svg) no-repeat center;
+}
+.fa-bed {
+    mask-image: url(../assets/icons/bed.svg) no-repeat center;
+    mask: url(../assets/icons/bed.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/bed.svg) no-repeat center;
+}

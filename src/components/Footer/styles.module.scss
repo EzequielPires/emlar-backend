@@ -1,0 +1,89 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fafafa;
+    border-top: 1px solid #d3d3d3;
+    padding-top: 80px;
+    .item {
+        display: flex;
+        flex-direction: column;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: .5rem;
+            span {
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: var(--main);
+            }
+        }
+        .slogan {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        a {
+            color: #555;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            font-size: 1.125rem;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        span {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        form {
+            display: flex;
+            width: 100%;
+            input {
+                flex: 1;
+                border-radius: 6px 0 0 6px;
+                border: 0;
+                border: 1px solid #d3d3d3;
+                border-right: 0;
+                padding-left: 1rem;
+            }
+            button {
+                height: 56px;
+                width: 126px;
+                border: 0;
+                background: var(--main);
+                color: #fff;
+                font-weight: 700;
+                border-radius: 0 6px 6px 0;
+            }
+        }
+    }
+    .disabled {
+        border: 1px solid #d3d3d3;
+        background: #f5ecff;
+        color: var(--main);
+        font-size: 1rem;
+        font-weight: 600;
+        height: 48px;
+        width: 160px;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+    }
+    .rodape {
+        span {
+            font-size: .875rem;
+            color: #333;
+            font-weight: 600;
+        }
+        margin-top: 64px;
+        padding: 1.5rem 0;
+        border-top: 1px solid #d3d3d3;
+        display: flex;
+        justify-content: space-between;
+    }
+}

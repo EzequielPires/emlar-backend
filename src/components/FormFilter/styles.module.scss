@@ -1,0 +1,44 @@
+.form_filter {
+    width: 800px;
+    height: 82px;
+    display: flex;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    z-index: 9999 !important;
+    border-radius: 6px;
+    .item {
+        flex: 1;
+        border-right: 1px solid #d3d3d3;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            font-size: .875rem;
+            font-weight: 700;
+            color: #333;
+        }
+        button {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 0;
+            background: transparent;
+            color: #999;
+        }
+        .submit {
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            background: var(--main);
+            border: 0;
+            border-radius: 6px;
+            height: 48px;
+            width: 100%;
+        }
+    }
+}

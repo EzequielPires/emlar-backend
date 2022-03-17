@@ -1,0 +1,105 @@
+.header {
+    position: relative;
+    background: #fafafa;
+    border-bottom: 1px solid #d3d3d3;
+    .navbar {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 72px;
+        z-index: 999;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #333;
+            span {
+                color: var(--main);
+            }
+        }
+        ul {
+            margin-bottom: 0 !important;
+            padding: 0 !important;
+            align-items: center;
+            margin-left: 64px;
+            gap: 2rem;
+            li {
+                list-style: none;
+                a {
+                    display: flex;
+                    align-items: center;
+                    height: 40px;
+                    color: #333;
+                    font-weight: 700;
+                    &.active {
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 32px;
+                            border-radius: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background: var(--main);
+                        }
+                    }
+                }
+            }
+        }
+        .contact, .btn_primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 48px;
+            width: 248px;
+            background: #fff;
+            border: 1px solid #d3d3d3;
+            border-radius: 6px;
+            font-size: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+        .btn_primary {
+            background: var(--main);
+            color: #fff;
+            border: 0;
+        }
+    }
+    .body {
+        height: 600px;
+        display: flex;
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 0;
+            width: 50%;
+            z-index: 10;
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #333;
+                max-width: 456px;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #333;
+                max-width: 456px;
+                margin-bottom: 2rem;
+            }
+        }
+        .content_image {
+            position: relative;
+            width: 50%;
+            img {
+                left: 0;
+                position: absolute;
+                z-index: 0;
+            }
+        }
+    }
+}
