@@ -8,9 +8,11 @@ export function Footer() {
             <div className="container">
                 <div className="row">
                     <div className={styles.item + " col-md-4"}>
-                        <a href="/" className={styles.logo}>
-                            Em<span>Lar</span>
-                        </a>
+                        <Link href="/">
+                            <a className={styles.logo}>
+                                Em<span>Lar</span>
+                            </a>
+                        </Link>
                         <span className={styles.slogan}>Um novo lar para seus sonhos</span>
                         <div className="d-flex gap-3" style={{ marginTop: 64 }}>
                             <Link href="/">
