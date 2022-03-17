@@ -61,8 +61,12 @@ export function Footer() {
                 <div className={styles.rodape}>
                     <span>EmLar © Todos os direitos reservados</span>
                     <div className="d-flex gap-4">
-                        <a href="" style={{ color: 'var(--main)', fontSize: 14, fontWeight: 600 }}>Anunciar Imóvel</a>
-                        <a href="" style={{ color: 'var(--main)', fontSize: 14, fontWeight: 600 }}>Queremos o seu Feedback</a>
+                        <Link href="/">
+                            <a style={{ color: 'var(--main)', fontSize: 14, fontWeight: 600 }}>Anunciar Imóvel</a>
+                        </Link>
+                        <Link href="/">
+                            <a style={{ color: 'var(--main)', fontSize: 14, fontWeight: 600 }}>Queremos o seu Feedback</a>
+                        </Link>
                     </div>
                 </div>
             </div>
