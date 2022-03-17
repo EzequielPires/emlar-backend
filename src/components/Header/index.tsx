@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Banner from "../../assets/images/banner.png";
 import { FormFilter } from "../FormFilter";
 import { Icon } from "../Icon";
@@ -9,15 +10,21 @@ export function Header() {
             <nav className={styles.navbar}>
                 <div className="container d-flex align-items-center justify-content-between">
                     <div className="d-flex">
-                        <a  className={styles.logo}>
-                            Em<span>Lar</span>
-                        </a>
+                        <Link href="/">
+                            <a className={styles.logo}>
+                                Em<span>Lar</span>
+                            </a>
+                        </Link>
                         <ul className="d-flex">
                             <li>
-                                <a  className={styles.active}>Home</a>
+                                <Link href="/">
+                                    <a className={styles.active}>Home</a>
+                                </Link>
                             </li>
                             <li>
-                                <a >Imóveis para alugar</a>
+                                <Link href="/">
+                                    <a>Imóveis para alugar</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
