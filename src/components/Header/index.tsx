@@ -9,15 +9,15 @@ export function Header() {
             <nav className={styles.navbar}>
                 <div className="container d-flex align-items-center justify-content-between">
                     <div className="d-flex">
-                        <a href="/" className={styles.logo}>
+                        <a  className={styles.logo}>
                             Em<span>Lar</span>
                         </a>
                         <ul className="d-flex">
                             <li>
-                                <a href="/" className={styles.active}>Home</a>
+                                <a  className={styles.active}>Home</a>
                             </li>
                             <li>
-                                <a href="/">Imóveis para alugar</a>
+                                <a >Imóveis para alugar</a>
                             </li>
                         </ul>
                     </div>
