@@ -36,3 +36,23 @@
         }
     }
 }
+@media (max-width: 720px) {
+    .section_outher {
+        .gallery {
+            display: none;
+        }
+        .content {
+            margin-left: 0;
+            h2 {
+                text-align: start;
+                font-size: 1.5rem;
+            }
+            p {
+                text-align: start;
+            }
+            button { 
+                width: 100%;
+            }
+        }
+    }
+}

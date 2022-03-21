@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 export function SectionSteps() {
     return (
         <section className={styles.section_steps}>
-            <div className="container d-flex gap-4">
+            <div className={styles.content + " container d-flex flex-wrap gap-4"}>
                 <div className={styles.title}>
                     <h2>Entenda como o Em<span>Lar</span> funciona</h2>
                     <p>São apena 3 passos</p>

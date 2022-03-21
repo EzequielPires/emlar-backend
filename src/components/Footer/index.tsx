@@ -14,7 +14,7 @@ export function Footer() {
                             </a>
                         </Link>
                         <span className={styles.slogan}>Um novo lar para seus sonhos</span>
-                        <div className="d-flex gap-3" style={{ marginTop: 64 }}>
+                        <div className={styles.social + " d-flex gap-3"} style={{ marginTop: 64 }}>
                             <Link href="/">
                                 <a ><Icon name={"instagram"} color={'var(--main)'} size={48} /></a>
 

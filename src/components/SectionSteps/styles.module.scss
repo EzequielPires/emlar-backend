@@ -29,3 +29,28 @@
         }
     }
 }
+@media (max-width: 720px) {
+    .section_steps {
+        display: flex;
+        flex-wrap: wrap;
+        .title {
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-weight: 400;
+            }
+        }
+        .item {
+            min-width: 100%;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-end;
+            p {
+                position: relative;
+                left: unset;
+            }
+        }
+    }
+}

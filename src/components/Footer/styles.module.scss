@@ -87,3 +87,23 @@
         justify-content: space-between;
     }
 }
+@media (max-width: 720px) {
+    .footer {
+        padding-top: 2rem;
+        .item {
+            .social {
+                margin-top: 0 !important;
+            }
+            &:last-child {
+                margin-top: 1rem;
+                span {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+       .rodape {
+           flex-wrap: wrap;
+           gap: 1rem;
+       }
+    }
+}

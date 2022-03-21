@@ -103,3 +103,26 @@
         }
     }
 }
+@media (max-width: 720px) {
+    .header {
+        .navbar {
+            ul, .contact, .btn_primary {
+                display: none !important;
+            }
+        }
+        .body {
+            height: auto;
+            flex-wrap: wrap;
+            .content {
+                width: 100%;
+                padding-bottom: 2rem;
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+            .content_image {
+                display: none;
+            }
+        }
+    }
+}
