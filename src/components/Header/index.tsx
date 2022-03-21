@@ -36,6 +36,9 @@ export function Header() {
                         <button className={styles.btn_primary}>
                             Anunciar imóvel
                         </button>
+                        <button className={styles.menu}>
+                            <Icon name={"menu"} size={32} color={"#333"}/>
+                        </button>
                     </div>
                 </div>
             </nav>

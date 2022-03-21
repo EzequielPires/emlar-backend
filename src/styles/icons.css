@@ -73,3 +73,8 @@
     mask: url(../assets/icons/bed.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/bed.svg) no-repeat center;
 }
+.fa-menu {
+    mask-image: url(../assets/icons/hamburguer.svg) no-repeat center;
+    mask: url(../assets/icons/hamburguer.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/hamburguer.svg) no-repeat center;
+}
