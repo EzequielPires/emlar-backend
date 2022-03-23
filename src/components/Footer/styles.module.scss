@@ -65,7 +65,7 @@
     }
     .disabled {
         border: 1px solid #d3d3d3;
-        background: #f5ecff;
+        background: var(--light);
         color: var(--main);
         font-size: 1rem;
         font-weight: 600;

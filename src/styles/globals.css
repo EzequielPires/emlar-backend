@@ -5,10 +5,18 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
+}
+html {
+  scroll-behavior: auto !important;
+}
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 :root {
-  --main: #8000ff;
+  --main: #4C74FF;
+  --light: #F6F8FF;
 }
 
 a {

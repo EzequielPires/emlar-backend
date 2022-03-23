@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Banner from "../../assets/images/banner.png";
+import { Banner } from "../Banner";
 import { FormFilter } from "../FormFilter";
 import { Icon } from "../Icon";
 import styles from "./styles.module.scss";
@@ -29,12 +29,11 @@ export function Header() {
                         </ul>
                     </div>
                     <div className="d-flex gap-3">
-                        <button className={styles.contact}>
-                            <Icon name={"whatsapp"} size={24} color={"#00c013"} />
-                            Falar com um corretor
+                        <button className={styles.login}>
+                            Entrar
                         </button>
                         <button className={styles.btn_primary}>
-                            Anunciar imóvel
+                            Criar conta
                         </button>
                         <button className={styles.menu}>
                             <Icon name={"menu"} size={32} color={"#333"}/>
@@ -42,18 +41,6 @@ export function Header() {
                     </div>
                 </div>
             </nav>
-            <div className={styles.body}>
-                <div className="container d-flex">
-                    <div className={styles.content}>
-                        <h1>Encontre o lugar perfeito para morar</h1>
-                        <p>Alugue seu imóvel de forma simples e rápida com preços acessíveis e com uma ótima qualidade</p>
-                        <FormFilter />
-                    </div>
-                    <div className={styles.content_image}>
-                        <img src={Banner.src} alt="" />
-                    </div>
-                </div>
-            </div>
         </header>
     )
 }

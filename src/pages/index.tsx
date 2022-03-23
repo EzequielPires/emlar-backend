@@ -1,3 +1,4 @@
+import { Banner } from '../components/Banner'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { SectionHighlights } from '../components/SectionHighlights'
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div>
         <Header />
+        <Banner />
         <SectionSteps />
         <SectionHighlights />
         <SectionOuther />

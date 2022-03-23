@@ -1,0 +1,170 @@
+.view {
+    .gallery {
+        display: flex;
+        .image_main {
+            flex: 1;
+            width: 50%;
+            height: 600px;
+            overflow: hidden;
+            border: 1px solid #fff;
+            border-top: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .thumb {
+            flex: 1;
+            width: 50%;
+            height: 600px;
+            .item {
+                width: 50%;
+                height: 300px;
+                overflow: hidden;
+                border: 1px solid #fff;
+                &:nth-child(1), &:nth-child(2) {
+                    border-top: 0;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .content {
+        padding: 2rem 0;
+        .main {
+            width: 100%;
+            max-width: 720px;
+            .title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: .5rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #555;
+                margin-bottom: 2rem;
+            }
+            .item_icon {
+                padding: 1rem;
+                width: 128px;
+                height: 122px;
+                background: var(--light);
+                border-radius: 8px;
+                border: 1px solid var(--main);
+                span {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+            .item {
+                display: flex;
+                gap: 1rem;
+                .item_icon {
+                    height: 56px;
+                    width: 56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                }
+                .title {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    color: #333;
+                    margin-bottom: .25rem;
+                }
+                .subtitle {
+                    margin-bottom: 0;
+                }
+            }
+            hr {
+                background: #d3d3d3 !important;
+                opacity: 1;
+                margin: 3rem 0;
+            }
+        }
+    }
+}
+.aside {
+    width: 480px;
+    max-width: 100%;
+    height: max-content;
+    border: 1px solid #d3d3d3;
+    padding: 1.5rem;
+    border-radius: 8px;
+    .aside_header {
+        display: flex;
+        flex-direction: column;
+        span {
+            font-size: 20px;
+            color: #333;
+            display: block;
+            margin-bottom: .25rem;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+    .aside_body {
+        .line {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #d3d3d3;
+            margin-bottom: 1.5rem;
+            .name, .price {
+                font-size: 1rem;
+                color: #555;
+                font-weight: 500;
+            }
+            &:nth-child(4) {
+                border-bottom: 0;
+                .name, .price {
+                    font-size: 1.2rem;
+                    color: #333;
+                    font-weight: 600;
+                }
+            }
+        }
+        button {
+            width: 100%;
+            height: 56px;
+            border-radius: 8px;
+            border: 0;
+            background: var(--main);
+            color: #fff;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+        .text {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.btn_large {
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid var(--main);
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    background: var(--light);
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1.125rem;
+}

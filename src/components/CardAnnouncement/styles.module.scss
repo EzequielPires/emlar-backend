@@ -25,6 +25,7 @@
             margin-bottom: .5rem;
             font-size: 20px;
             font-weight: 600;
+            color: #333;
             .mark {
                 color: var(--main);
             }
@@ -40,6 +41,9 @@
             display: flex;
             align-items: center;
             gap: .5rem;
+            span {
+                color: #555;
+            }
         }
     }
 }
