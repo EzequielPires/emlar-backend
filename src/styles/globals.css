@@ -30,7 +30,7 @@ a {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 40px !important;
-  color: #8000ff;
+  color: var(--main);
 }
 @media (max-width: 720px) {
   .swiper-button-next::after,
