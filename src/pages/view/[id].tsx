@@ -4,6 +4,7 @@ import { Icon } from "../../components/Icon";
 import { Footer } from "../../components/Footer";
 import { useRouterScroll } from "@moxy/next-router-scroll";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export default function View() {
     const { updateScroll } = useRouterScroll();
@@ -12,6 +13,10 @@ export default function View() {
     }, []);
     return (
         <>
+            <Head>
+                <title>Apartamento no bairro São Cristóvão - EmLar</title>
+                <meta name="author" content="Encontre o lugar perfeito para morar em Catalão e Região." />
+            </Head>
             <Header />
             <div className={styles.view}>
                 <div className={styles.gallery}>
@@ -151,7 +156,7 @@ export default function View() {
                             style={{ boxShadow: "0 0 4px rgba(0, 0, 0, 0.25)", borderRadius: 8, marginTop: 24 }}
                             loading="lazy"></iframe>
                     </div>
-                    <div className="d-flex flex-column" style={{height: "max-content", position: "sticky", top: "88px"}}>
+                    <div className="d-flex flex-column" style={{ height: "max-content", position: "sticky", top: "88px" }}>
                         <div className={styles.aside}>
                             <div className={styles.aside_header}>
                                 <span>Somente aluguel:</span>

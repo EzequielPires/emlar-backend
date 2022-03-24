@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Banner } from "../Banner";
-import { FormFilter } from "../FormFilter";
+import Logo from "../../assets/images/logo.svg";
 import { Icon } from "../Icon";
 import styles from "./styles.module.scss";
 
@@ -12,7 +11,7 @@ export function Header() {
                     <div className="d-flex">
                         <Link href="/">
                             <a className={styles.logo}>
-                                Em<span>Lar</span>
+                                <img src={Logo.src} alt="" />
                             </a>
                         </Link>
                         <ul className="d-flex">

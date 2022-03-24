@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Banner } from '../components/Banner'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
@@ -8,12 +9,16 @@ import { SectionSteps } from '../components/SectionSteps'
 export default function Home() {
   return (
     <div>
-        <Header />
-        <Banner />
-        <SectionSteps />
-        <SectionHighlights />
-        <SectionOuther />
-        <Footer />
+      <Head>
+        <title>EmLar</title>
+        <meta name="author" content="Encontre o lugar perfeito para morar em Catalão e Região." />
+      </Head>
+      <Header />
+      <Banner />
+      <SectionSteps />
+      <SectionHighlights />
+      <SectionOuther />
+      <Footer />
     </div>
   )
 }
