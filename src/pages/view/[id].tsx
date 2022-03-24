@@ -37,7 +37,33 @@ export default function View() {
                     <div className={styles.main}>
                         <h2 className={styles.title}>Apartamento no bairro São Cristóvão.</h2>
                         <p className={styles.subtitle}>R. José Costa Carvalho, 149D, São Cristóvão, Chapecó/SC</p>
-                        <div className="d-flex gap-3">
+                        <div className={styles.characteristics}>
+                            <div className={styles.aside_header}>
+                                <span>Somente aluguel:</span>
+                                <span className={styles.price}>R$ 1640,00</span>
+                            </div>
+                            <div className={styles.aside_body}>
+                                <div className={styles.line}>
+                                    <span className={styles.name}>Condomínio</span>
+                                    <span className={styles.price}>R$ 250,00</span>
+                                </div>
+                                <div className={styles.line}>
+                                    <span className={styles.name}>IPTU</span>
+                                    <span className={styles.price}>R$ 39,00</span>
+                                </div>
+                                <div className={styles.line}>
+                                    <span className={styles.name}>Seguro Incêndio</span>
+                                    <span className={styles.price}>R$ 20,00</span>
+                                </div>
+                                <div className={styles.line}>
+                                    <span className={styles.name}>Total</span>
+                                    <span className={styles.price}>R$ 1937,00</span>
+                                </div>
+                                <button>Agendar visita</button>
+                                <p className={styles.text}>Sua visita é gratuita e livre de compromissos</p>
+                            </div>
+                        </div>
+                        <div className="d-flex justify-content-center justify-content-md-start w-100 flex-wrap gap-3">
                             <div className={styles.item_icon}>
                                 <Icon name={"ruler-triangle"} color={"var(--main)"} size={32} />
                                 <span>65m2</span>
@@ -63,7 +89,7 @@ export default function View() {
                         <div className="d-flex flex-column gap-4 mt-4">
                             <div className={styles.item}>
                                 <div className={styles.item_icon}>
-                                    <Icon name={"ruler-triangle"} color={"var(--main)"} size={32} />
+                                    <Icon name={"steak"} color={"var(--main)"} size={32} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h4 className={styles.title}>Churrasqueira</h4>
@@ -81,7 +107,7 @@ export default function View() {
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.item_icon}>
-                                    <Icon name={"ruler-triangle"} color={"var(--main)"} size={32} />
+                                    <Icon name={"map-marked"} color={"var(--main)"} size={32} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h4 className={styles.title}>Localização Privilegiada</h4>
@@ -90,7 +116,7 @@ export default function View() {
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.item_icon}>
-                                    <Icon name={"ruler-triangle"} color={"var(--main)"} size={32} />
+                                    <Icon name={"shield-check"} color={"var(--main)"} size={32} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h4 className={styles.title}>Bairro Seguro</h4>
@@ -99,7 +125,7 @@ export default function View() {
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.item_icon}>
-                                    <Icon name={"ruler-triangle"} color={"var(--main)"} size={32} />
+                                    <Icon name={"sort-circle"} color={"var(--main)"} size={32} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h4 className={styles.title}>Elevador</h4>
@@ -108,7 +134,7 @@ export default function View() {
                             </div>
                             <div className={styles.item}>
                                 <div className={styles.item_icon}>
-                                    <Icon name={"ruler-triangle"} color={"var(--main)"} size={32} />
+                                    <Icon name={"paw"} color={"var(--main)"} size={32} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h4 className={styles.title}>Aceita Pet</h4>

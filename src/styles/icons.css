@@ -83,3 +83,28 @@
     mask: url(../assets/icons/ruler-triangle.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/ruler-triangle.svg) no-repeat center;
 }
+.fa-steak {
+    mask-image: url(../assets/icons/steak.svg) no-repeat center;
+    mask: url(../assets/icons/steak.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/steak.svg) no-repeat center;
+}
+.fa-map-marked {
+    mask-image: url(../assets/icons/map-marked.svg) no-repeat center;
+    mask: url(../assets/icons/map-marked.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/map-marked.svg) no-repeat center;
+}
+.fa-shield-check {
+    mask-image: url(../assets/icons/shield-check.svg) no-repeat center;
+    mask: url(../assets/icons/shield-check.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/shield-check.svg) no-repeat center;
+}
+.fa-sort-circle {
+    mask-image: url(../assets/icons/sort-circle.svg) no-repeat center;
+    mask: url(../assets/icons/sort-circle.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/sort-circle.svg) no-repeat center;
+}
+.fa-paw {
+    mask-image: url(../assets/icons/paw.svg) no-repeat center;
+    mask: url(../assets/icons/paw.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/paw.svg) no-repeat center;
+}
