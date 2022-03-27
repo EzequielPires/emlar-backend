@@ -18,6 +18,17 @@
     mask: url(../assets/icons/facebook-f.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/facebook-f.svg) no-repeat center;
 }
+.fa-facebook-f {
+    mask-image: url(../assets/icons/facebook.svg) no-repeat center;
+    mask: url(../assets/icons/facebook.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/facebook.svg) no-repeat center;
+}
+.fa-google {
+    mask-image: url(../assets/icons/google.svg) no-repeat center;
+    mask: url(../assets/icons/google.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/google.svg) no-repeat center;
+}
+
 .fa-linkedin {
     mask-image: url(../assets/icons/linkedin-in.svg) no-repeat center;
     mask: url(../assets/icons/linkedin-in.svg) no-repeat center;
@@ -58,6 +69,11 @@
     mask: url(../assets/icons/chevron-down.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/chevron-down.svg) no-repeat center;
 }
+.fa-chevron-left {
+    mask-image: url(../assets/icons/chevron-left.svg) no-repeat center;
+    mask: url(../assets/icons/chevron-left.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/chevron-left.svg) no-repeat center;
+}
 .fa-garage {
     mask-image: url(../assets/icons/garage.svg) no-repeat center;
     mask: url(../assets/icons/garage.svg) no-repeat center;
@@ -77,6 +93,11 @@
     mask-image: url(../assets/icons/hamburguer.svg) no-repeat center;
     mask: url(../assets/icons/hamburguer.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/hamburguer.svg) no-repeat center;
+}
+.fa-close {
+    mask-image: url(../assets/icons/close.svg) no-repeat center;
+    mask: url(../assets/icons/close.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/close.svg) no-repeat center;
 }
 .fa-ruler-triangle {
     mask-image: url(../assets/icons/ruler-triangle.svg) no-repeat center;
@@ -107,4 +128,9 @@
     mask-image: url(../assets/icons/paw.svg) no-repeat center;
     mask: url(../assets/icons/paw.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/paw.svg) no-repeat center;
+}
+.fa-sliders {
+    mask-image: url(../assets/icons/sliders-h.svg) no-repeat center;
+    mask: url(../assets/icons/sliders-h.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/sliders-h.svg) no-repeat center;
 }

@@ -13,7 +13,6 @@ export default function Home() {
         <title>EmLar</title>
         <meta name="author" content="Encontre o lugar perfeito para morar em Catalão e Região." />
       </Head>
-      <Header />
       <Banner />
       <SectionSteps />
       <SectionHighlights />

@@ -17,7 +17,6 @@ export default function View() {
                 <title>Apartamento no bairro São Cristóvão - EmLar</title>
                 <meta name="author" content="Encontre o lugar perfeito para morar em Catalão e Região." />
             </Head>
-            <Header />
             <div className={styles.view}>
                 <div className={styles.gallery}>
                     <div className={styles.image_main} >
@@ -156,7 +155,7 @@ export default function View() {
                             style={{ boxShadow: "0 0 4px rgba(0, 0, 0, 0.25)", borderRadius: 8, marginTop: 24 }}
                             loading="lazy"></iframe>
                     </div>
-                    <div className="d-flex flex-column" style={{ height: "max-content", position: "sticky", top: "88px" }}>
+                    <div className="d-flex flex-column" style={{ height: "max-content", position: "sticky", top: "128px" }}>
                         <div className={styles.aside}>
                             <div className={styles.aside_header}>
                                 <span>Somente aluguel:</span>

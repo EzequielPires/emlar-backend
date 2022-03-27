@@ -1,0 +1,131 @@
+.btn_filter {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: 48px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    padding: 0 1rem;
+    font-weight: 600;
+    color: #333;
+}
+.body {
+    position: fixed;
+    width: 440px;
+    height: 100vh;
+    background: #fff;
+    right: -440px;
+    top: 0;
+    padding: 1rem;
+    padding-top: 3rem;
+    z-index: 9999;
+    transition: .5s;
+    &.show {
+        right: 0;
+    }
+    .title {
+        font-size: 1.3rem;
+        color: #333;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background: #fff;
+        border-top: 1px solid #d3d3d3;
+        button {
+            height: 48px;
+            width: 100%;
+            border: 0;
+            color: #fff;
+            font-weight: 600;
+            background: var(--main);
+            border-radius: 8px;
+            &:first-child {
+                background: #fff;
+                color: #333;
+                border: 1px solid #333;
+            }
+        }
+    }
+    .btn_close {
+        border: 0;
+        background: transparent;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+    }
+}
+.tab_button {
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+    button {
+        height: 40px;
+        width: 100%;
+        background: #fff;
+        border: 2px solid var(--main);
+        color: var(--main);
+        &:first-child {
+            background: var(--main);
+            color: #fff;
+            border-radius: 6px 0 0 6px;
+        }
+        &:last-child {
+            border-radius: 0 6px 6px 0;
+        }
+    }
+}
+.section {
+    .title {
+        display: block;
+        font-size: 1.125rem;
+        margin-bottom: .5rem;
+        font-weight: 600;
+        color: #333;
+    }
+    .select {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .select_box {
+            label {
+                height: 32px;
+                display: flex;
+                align-items: center;
+                border: 1px solid #d3d3d3;
+                padding: 0 2rem;
+                border-radius: 8px;
+                font-size: .875rem;
+                color: #555;
+            }
+            input {
+                display: none;
+                &:checked ~ label {
+                    font-weight: 600;
+                    border-color: var(--main);
+                    color: var(--main);
+                    background: var(--light);
+                }
+            }
+        }
+    }
+}
+.overflow {
+    display: none;
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    &.show {
+        display: block;
+    }
+}

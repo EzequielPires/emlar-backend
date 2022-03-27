@@ -1,3 +1,4 @@
+import router from "next/router";
 import { Icon } from "../Icon";
 import styles from "./styles.module.scss";
 
@@ -31,7 +32,7 @@ export function FormFilter() {
                     </button>
                 </div>
                 <div className={styles.item}>
-                    <button className={styles.submit}>Procurar</button>
+                    <button className={styles.submit} onClick={() => router.push('/imoveis')}>Procurar</button>
                 </div>
             </form>
         </>

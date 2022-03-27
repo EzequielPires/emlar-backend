@@ -1,4 +1,5 @@
 import Link from "next/link";
+import router from "next/router";
 import Logo from "../../assets/images/logo.svg";
 import { Icon } from "../Icon";
 import styles from "./styles.module.scss";
@@ -28,7 +29,7 @@ export function Header() {
                         </ul>
                     </div>
                     <div className="d-flex gap-3">
-                        <button className={styles.login}>
+                        <button className={styles.login} onClick={() => router.push('/login')}>
                             Entrar
                         </button>
                         <button className={styles.btn_primary}>
