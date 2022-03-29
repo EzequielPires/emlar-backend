@@ -12,15 +12,16 @@
 }
 .body {
     position: fixed;
-    width: 440px;
+    width: 368px;
     height: 100vh;
+    overflow-y: auto !important;
     background: #fff;
-    right: -440px;
+    right: -368px;
     top: 0;
-    padding: 1rem;
-    padding-top: 3rem;
+    padding: 3rem 1rem;
+    padding-bottom: 0;
     z-index: 9999;
-    transition: .5s;
+    transition: .3s;
     &.show {
         right: 0;
     }
@@ -29,9 +30,9 @@
         color: #333;
     }
     footer {
-        position: absolute;
+        position: sticky;
         bottom: 0;
-        left: 0;
+        right: 0;
         width: 100%;
         padding: 1rem;
         background: #fff;
@@ -84,7 +85,7 @@
 .section {
     .title {
         display: block;
-        font-size: 1.125rem;
+        font-size: 1rem;
         margin-bottom: .5rem;
         font-weight: 600;
         color: #333;
@@ -92,14 +93,14 @@
     .select {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: .5rem;
         .select_box {
             label {
                 height: 32px;
                 display: flex;
                 align-items: center;
                 border: 1px solid #d3d3d3;
-                padding: 0 2rem;
+                padding: 0 1rem;
                 border-radius: 8px;
                 font-size: .875rem;
                 color: #555;

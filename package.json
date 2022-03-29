@@ -19,7 +19,8 @@
     "sass": "^1.49.9",
     "scss": "^0.2.4",
     "swiper": "^8.0.7",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "vanilla-masker": "^1.2.0"
   },
   "devDependencies": {
     "@types/moxy__next-router-scroll": "^2.2.2",
