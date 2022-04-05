@@ -1,0 +1,49 @@
+.aside_bar {
+    background: var(--main);
+    height: 100vh;
+    width: 300px;
+    .header {
+        padding-left: 2rem;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 2rem;
+        img {
+            height: 56px;
+        }
+    }
+    ul {
+        border-top: 1px solid rgba(255, 255, 255, 0.123);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        li {
+            list-style: none;
+            height: 56px;
+            padding-left: 1.5rem;
+            border-radius: 56px 0 0 56px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            &.active {
+                background: #fff;
+                a {
+                    font-weight: 600;
+                    color: var(--main);
+                    svg, i {
+                        color: var(--main) !important;
+                        background-color: var(--main) !important;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                text-decoration: none;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
+}

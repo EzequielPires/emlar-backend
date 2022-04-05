@@ -14,7 +14,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [visibleHeader, setVisibleHeader] = useState(true);
   const verify = () => {
-    router.asPath === "/login" || router.asPath === "/new-user" || router.asPath === "/imoveis" ? setVisibleHeader(false) : setVisibleHeader(true);
+    router.asPath === "/login" ||
+      router.asPath === "/new-user" ||
+      router.asPath === "/imoveis" ||
+      router.asPath === "/admin"
+      ? setVisibleHeader(false) : setVisibleHeader(true);
   }
   useEffect(() => {
     verify();
@@ -22,8 +26,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <RouterScrollProvider>
-      {visibleHeader && <Header />}
-      <Component {...pageProps} />
+      <div>
+        {visibleHeader && <Header />}
+        <Component {...pageProps} />
+      </div>
     </RouterScrollProvider>
   )
 }

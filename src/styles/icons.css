@@ -134,3 +134,38 @@
     mask: url(../assets/icons/sliders-h.svg) no-repeat center;
     -webkit-mask: url(../assets/icons/sliders-h.svg) no-repeat center;
 }
+.fa-home {
+    mask-image: url(../assets/home.svg);
+    mask: url(../assets/home.svg) no-repeat center;
+    -webkit-mask: url(../assets/home.svg) no-repeat center;  
+}
+.fa-user {
+    mask-image: url(../assets/user.svg);
+    mask: url(../assets/user.svg) no-repeat center;
+    -webkit-mask: url(../assets/user.svg) no-repeat center;  
+}
+.fa-setting {
+    mask-image: url(../assets/setting.svg);
+    mask: url(../assets/setting.svg) no-repeat center;
+    -webkit-mask: url(../assets/setting.svg) no-repeat center;  
+}
+.fa-search {
+    mask-image: url(../assets/search.svg);
+    mask: url(../assets/search.svg) no-repeat center;
+    -webkit-mask: url(../assets/search.svg) no-repeat center;  
+}
+.fa-notification {
+    mask-image: url(../assets/notification.svg);
+    mask: url(../assets/notification.svg) no-repeat center;
+    -webkit-mask: url(../assets/notification.svg) no-repeat center;  
+}
+.fa-arrow-down {
+    mask-image: url(../assets/arrow-down.svg);
+    mask: url(../assets/arrow-down.svg) no-repeat center;
+    -webkit-mask: url(../assets/arrow-down.svg) no-repeat center;  
+}
+.fa-arrow-right-squad {
+    mask-image: url(../assets/arrow-right-squad.svg);
+    mask: url(../assets/arrow-right-squad.svg) no-repeat center;
+    -webkit-mask: url(../assets/arrow-right-squad.svg) no-repeat center;  
+}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import router from "next/router";
 import { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { Icon } from "../../components/Icon";
@@ -8,9 +9,13 @@ import styles from "./styles.module.scss";
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const handleSign = (e) => {
+        e.preventDefault();
+        router.push('/admin');
+    }
     return (
         <div className={styles.container}>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={handleSign}>
                 <header>
                     <Link href="/">
                         <a>

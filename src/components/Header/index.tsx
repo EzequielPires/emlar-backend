@@ -33,7 +33,7 @@ export function Header() {
                             Entrar
                         </button>
                         <button className={styles.btn_primary}>
-                            Criar conta
+                            Cadastrar imóvel
                         </button>
                         <button className={styles.menu}>
                             <Icon name={"menu"} size={32} color={"#333"}/>
