@@ -1,5 +1,6 @@
 import { hashSync } from "bcrypt";
-import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn, Unique } from "typeorm";
+import { BeforeInsert, Column, Entity, OneToMany, PrimaryGeneratedColumn, Unique } from "typeorm";
+import { Immobile } from "./immobile.entity";
 
 @Entity()
 @Unique(["email"])
@@ -18,6 +19,9 @@ export class User {
 
     @Column()
     password: string;
+
+    @OneToMany(() => Immobile, immobile => immobile.user)
+    immobiles: Immobile[];
 
     @BeforeInsert()
     hashPassword() {

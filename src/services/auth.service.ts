@@ -30,7 +30,7 @@ export class AuthService {
             return null;
         }
 
-        const isPasswordValid = password === user.password;
+        const isPasswordValid = compareSync(password, user.password);
         if (!isPasswordValid) return null;
 
         return user;
