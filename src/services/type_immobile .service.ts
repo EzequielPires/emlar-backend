@@ -51,6 +51,25 @@ export class TypeImmobileService {
         }
     }
 
+    async update(id: number, body: TypeImmobile) {
+        const type = await this.repository.findOne({
+            where: { id }
+        })
+
+        if (!type) {
+            throw new NotFoundException(`Não foi encontrado nenhum Tipo de imóvel com id ${id}`);
+        }
+
+        await this.repository.update({ id }, body);
+
+        return {
+            success: true,
+            data: await this.repository.findOne({
+                where: { id }
+            })
+        }
+    }
+
     async delete(id: number) {
         const type = await this.repository.findOne({
             where: { id }

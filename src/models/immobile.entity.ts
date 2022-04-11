@@ -1,4 +1,5 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, ManyToOne, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Address } from "./adress.entity";
 import { TypeImmobile } from "./type_immobile.entity";
 import { User } from "./user.entity";
 
@@ -52,31 +53,21 @@ export class Immobile {
     @Column()
     price: string;
 
-    @Column()
+    @Column({
+        nullable: true,
+    })
     iptu: boolean;
 
-    @Column()
+    @Column({
+        nullable: true,
+    })
     iptu_paid: boolean;
 
-    @Column()
+    @Column({
+        nullable: true,
+    })
     iptu_price: string;
 
-    /* Address */
-    @Column()
-    zipcode: string;
-
-    @Column()
-    address: string;
-
-    @Column()
-    number: string;
-
-    @Column()
-    complement: string;
-
-    @Column()
-    walk: number;
-
-    /* @Column()
-    ad_type: string; */
+    @OneToOne(() => Address, address => address.immobile)
+    address: Address;
 }

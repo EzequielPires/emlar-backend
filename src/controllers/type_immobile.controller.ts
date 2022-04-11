@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Post } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Post, Put } from "@nestjs/common";
 import { TypeImmobile } from "src/models/type_immobile.entity";
 import { TypeImmobileService } from "src/services/type_immobile .service";
 
@@ -18,6 +18,11 @@ export class TypeImmobileController {
     findOne(@Param('id') id: number) {
         return this.service.findOne(id);
     }
+    @Put('edit/:id')
+    edit(@Param('id') id: number, @Body() body:TypeImmobile) {
+        return this.service.update(id, body);
+    }
+
     @Delete('remove/:id')
     delete(@Param('id') id: number) {
         return this.service.delete(id);
