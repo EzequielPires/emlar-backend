@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Immobile } from "./immobile.entity";
 
 @Entity()
 export class Key {
@@ -7,4 +8,7 @@ export class Key {
 
     @Column()
     name: string;
+
+    @OneToMany(() => Immobile, immobile => immobile.key_type)
+    immobiles: Immobile[];
 }

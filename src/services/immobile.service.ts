@@ -22,7 +22,7 @@ export class ImmobileService {
 
     async findAll() {
         try {
-            const list = await this.repository.find({relations: ['user', 'type']});
+            const list = await this.repository.find({relations: ['user', 'type', 'concierge_operation', 'immobile_state', 'key_type', 'immovable_relationship', 'photos']});
             return {
                 success: true,
                 data: list

@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Immobile } from "./immobile.entity";
 
 @Entity()
 export class Furniture {
@@ -7,4 +8,8 @@ export class Furniture {
 
     @Column()
     name: string;
+
+    @ManyToMany(() => Immobile, immobiles => immobiles.furnitures)
+    @JoinTable()
+    immobiles: Immobile[];
 }

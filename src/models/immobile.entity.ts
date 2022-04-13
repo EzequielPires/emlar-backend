@@ -1,5 +1,11 @@
-import { Column, Entity, ManyToOne, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, ManyToMany, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Address } from "./adress.entity";
+import { Concierge } from "./concierge.entity";
+import { Furniture } from "./furniture.entity";
+import { ImmovableRelationship } from "./immovable_relationship.entity";
+import { Key } from "./key.entity";
+import { Photo } from "./photo.entity";
+import { StateImmobile } from "./state_immobile.entity";
 import { TypeImmobile } from "./type_immobile.entity";
 import { User } from "./user.entity";
 
@@ -19,13 +25,13 @@ export class Immobile {
 
     @Column()
     number_suites: number;
-    
+
     @Column()
     number_bathrooms: number;
-   
+
     @Column()
     number_garages: number;
-    
+
     @Column()
     area: number;
 
@@ -38,17 +44,20 @@ export class Immobile {
     @Column()
     pool: boolean;
 
-    @Column()
-    concierge_operation: string;
+    @ManyToMany(() => Furniture, furnitures => furnitures.immobiles, {eager: true})
+    furnitures: Furniture[];
 
-    @Column()
-    immobile_state: string;
+    @ManyToOne(() => Concierge, concierge_operation => concierge_operation.immobiles)
+    concierge_operation: Concierge;
 
-    @Column()
-    key_type: string;
+    @ManyToOne(() => StateImmobile, immobile_state => immobile_state.immobiles)
+    immobile_state: StateImmobile;
 
-    @Column()
-    immovable_relationship: string;
+    @ManyToOne(() => Key, key => key.immobiles)
+    key_type: Key;
+
+    @ManyToOne(() => ImmovableRelationship, immovable_relationship => immovable_relationship.immobiles)
+    immovable_relationship: ImmovableRelationship;
 
     @Column()
     price: string;
@@ -70,4 +79,7 @@ export class Immobile {
 
     @OneToOne(() => Address, address => address.immobile)
     address: Address;
+
+    @OneToMany(() => Photo, photo => photo.immobile)
+    photos: Photo[];
 }
