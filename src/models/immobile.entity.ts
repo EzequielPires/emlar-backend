@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToMany, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Address } from "./adress.entity";
 import { Concierge } from "./concierge.entity";
 import { Furniture } from "./furniture.entity";
@@ -14,10 +14,10 @@ export class Immobile {
     @PrimaryGeneratedColumn('increment')
     id: number;
 
-    @ManyToOne(() => User, user => user.immobiles)
+    @ManyToOne(() => User, user => user.immobiles, {eager: true})
     user: User;
 
-    @ManyToOne(() => TypeImmobile, type => type.immobiles)
+    @ManyToOne(() => TypeImmobile, type => type.immobiles, {eager: true})
     type: TypeImmobile;
 
     @Column()

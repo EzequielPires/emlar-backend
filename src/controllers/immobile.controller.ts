@@ -1,4 +1,5 @@
-import { Body, Controller, Delete, Get, Param, Post } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Post, Query } from "@nestjs/common";
+import { FindImmobilesQueryDto } from "src/dtos/find-immobiles-query.dto";
 import { Immobile } from "src/models/immobile.entity";
 import { ImmobileService } from "src/services/immobile.service";
 
@@ -10,9 +11,13 @@ export class ImmobileController {
     create(@Body() body: Immobile) {
         return this.service.create(body);
     }
-    @Get('list')
+    @Get()
     findAll() {
         return this.service.findAll();
+    }
+    @Get('/list')
+    findImmobiles(@Query() queryDto: FindImmobilesQueryDto) {
+        return this.service.findImmobiles(queryDto);
     }
     @Get(':id')
     findOne(@Param('id') id: number) {
