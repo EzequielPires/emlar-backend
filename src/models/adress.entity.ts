@@ -10,7 +10,7 @@ export class Address {
     zipcode: string;
 
     @Column()
-    address: string;
+    locale: string;
 
     @Column()
     number: string;
@@ -19,7 +19,10 @@ export class Address {
     complement: string;
 
     @Column()
-    walk: number;
+    city: string;
+
+    @Column()
+    uf: string;
 
     @OneToOne(() => Immobile, immobile => immobile.address, {nullable: false})
     @JoinColumn()
