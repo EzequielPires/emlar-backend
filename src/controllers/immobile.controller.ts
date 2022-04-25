@@ -1,4 +1,5 @@
-import { Body, Controller, Delete, Get, Param, Post, Query } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Post, Query, Req, UseGuards } from "@nestjs/common";
+import { AuthGuard } from "@nestjs/passport";
 import { FindImmobilesQueryDto } from "src/dtos/find-immobiles-query.dto";
 import { Immobile } from "src/models/immobile.entity";
 import { ImmobileService } from "src/services/immobile.service";
@@ -8,8 +9,14 @@ export class ImmobileController {
     constructor(private readonly service: ImmobileService) {}
 
     @Post('new')
-    create(@Body() body: Immobile) {
-        return this.service.create(body);
+    @UseGuards(AuthGuard('jwt'))
+    create(@Body() body: Immobile, @Req() req: any) {
+        return this.service.create(body, req.user);
+    }
+    @Get('my-immobiles')
+    @UseGuards(AuthGuard('jwt'))
+    findAllUser(@Req() req: any) {
+        return this.service.findAllUser(req.user);
     }
     @Get()
     findAll() {

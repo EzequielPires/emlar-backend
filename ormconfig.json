@@ -1,10 +1,10 @@
 {
-    "type": "mysql",
-    "host": "us-cdbr-east-05.cleardb.net",
-    "port": 3306,
-    "username": "bcb1f8c102f5ff",
-    "password": "8970e36d",
-    "database": "heroku_6ad6173a93596c9",
-    "entities": ["dist/**/*.entity{.ts,.js}"],
-    "synchronize": true
-  }
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "term228687535",
+  "database": "emlar",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": true
+}

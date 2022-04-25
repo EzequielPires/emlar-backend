@@ -12,7 +12,7 @@ export class Address {
     @Column()
     locale: string;
 
-    @Column()
+    @Column({nullable: true})
     number: string;
 
     @Column()
@@ -24,7 +24,7 @@ export class Address {
     @Column()
     uf: string;
 
-    @OneToOne(() => Immobile, immobile => immobile.address, {nullable: false})
+    @OneToOne(() => Immobile, immobile => immobile.address, { eager: true, onDelete: 'CASCADE' })
     @JoinColumn()
     immobile: Immobile;
 }

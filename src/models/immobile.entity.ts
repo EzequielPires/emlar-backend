@@ -77,9 +77,9 @@ export class Immobile {
     })
     iptu_price: string;
 
-    @OneToOne(() => Address, address => address.immobile)
+    @OneToOne(() => Address, address => address.immobile, {onDelete: "CASCADE"})
     address: Address;
 
-    @OneToMany(() => Photo, photo => photo.immobile)
+    @OneToMany(() => Photo, photo => photo.immobile, {onDelete: "CASCADE"})
     photos: Photo[];
 }

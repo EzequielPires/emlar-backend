@@ -6,9 +6,9 @@ import { Repository } from "typeorm";
 
 export class ImmobileService {
     constructor(@InjectRepository(Immobile) private repository: Repository<Immobile>) { }
-    async create(body: Immobile) {
+    async create(body: Immobile, user: any) {
         try {
-            const type = await this.repository.create(body);
+            const type = await this.repository.create({...body, user: user.id});
             return {
                 success: true,
                 data: await this.repository.save(type)
@@ -24,12 +24,13 @@ export class ImmobileService {
     async findImmobiles(queryDto: FindImmobilesQueryDto) {
         queryDto.page = queryDto.page < 1 ? 1 : queryDto.page;
         queryDto.limit = queryDto.limit > 100 ? 100 : queryDto.limit;
-        const { type, key_type, pet } = queryDto;
+        const { type, key_type, pet, user } = queryDto;
         const query = this.repository.createQueryBuilder('immobile');
         query.leftJoinAndSelect("immobile.type", "type");
         query.leftJoinAndSelect("immobile.key_type", "key");
         query.leftJoinAndSelect("immobile.photos", "photos");
         query.leftJoinAndSelect("immobile.address", "address");
+        query.leftJoinAndSelect("immobile.user", "user");
 
         type ? query.andWhere('immobile.type.id = :id', { id: `${type}` }) : null;
         key_type ? query.andWhere('immobile.key_type.id = :id', { id: `${key_type}` }) : null;
@@ -40,6 +41,21 @@ export class ImmobileService {
             success: true,
             data: immobiles,
             total: total
+        }
+    }
+
+    async findAllUser(id: any) {
+        try {
+            const list = await this.repository.find({ relations: ['user', 'type', 'concierge_operation', 'immobile_state', 'key_type', 'immovable_relationship', 'photos', 'address'], where: {user: id} });
+            return {
+                success: true,
+                data: list
+            }
+        } catch (error) {
+            return {
+                sucess: false,
+                message: error.message
+            }
         }
     }
 
